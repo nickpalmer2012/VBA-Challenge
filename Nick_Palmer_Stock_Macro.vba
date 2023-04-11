@@ -134,7 +134,7 @@ For Each ws In Worksheets
             'Reset values for total stock volume and price change when the ticker changes
             percent_change = 0
             total_stock_volume = 0
-        'Else statment to input new total stock volume
+        'Else statment to add to the ticker stock volume sum if the next cell is the same ticker name
         Else
             total_stock_volume = total_stock_volume + ws.Cells(i, 7)
      
